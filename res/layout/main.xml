@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-        >
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
     <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
-            />
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="toggle accelerometer"
-            android:onClick="toggleRecording"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Select a duration for the activity"
+        android:id="@+id/textview1"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker1">
+    </NumberPicker>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Press a button to start Recording"
+        android:id="@+id/textview2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start still recording"
+        android:onClick="startStillRecording"
+        android:id="@+id/button1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start lowenergy recording"
+        android:onClick="startLowenergyRecording"
+        android:id="@+id/button2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start highenergy recording"
+        android:onClick="startHighenergyRecording"
+        android:id="@+id/button3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Put the phone in the pocket and wait for the go signal!"
+        android:id="@+id/textview3"/>
 </LinearLayout>
 
